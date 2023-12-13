@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="business_unit_ms_clientfeedback" />
+  <EntityRelationship Name="lk_ms_clientfeedback_createdby" />
+  <EntityRelationship Name="lk_ms_clientfeedback_modifiedby" />
+  <EntityRelationship Name="owner_ms_clientfeedback" />
+  <EntityRelationship Name="team_ms_clientfeedback" />
+  <EntityRelationship Name="user_ms_clientfeedback" />
+</EntityRelationships>
