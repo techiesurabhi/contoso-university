@@ -22,5 +22,5 @@ jobs:
           environment-url: https://org1c501192.crm.dynamics.com/
           app-id: 3934bbc6-bd16-437b-8887-cb01b17e57ab
           tenant-id: 9208bb01-aeee-404b-bb62-ba73230069fe
-          client-secret : w-T8Q~xD_ERp3b7tCtoMhZH3gTX4ecc3Pw8N1cgR
+          client-secret : wLE8Q~mJyVm_Q2MMoXNc8bK_a11jf1ywXUn3Ucvv
           solution-file: TestProject_managed.zip
