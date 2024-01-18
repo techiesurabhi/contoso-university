@@ -13,7 +13,7 @@ jobs:
     runs-on: windows-latest
     environment: production
     steps:
-      - uses: dawidd6/action-download-artifact@v3
+      - uses: dawidd6/action-download-artifact@v2
         with:
           workflow: pack-solution.yml
           name: packed-solution
