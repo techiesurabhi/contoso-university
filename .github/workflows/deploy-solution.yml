@@ -20,6 +20,6 @@ jobs:
       - uses: microsoft/powerplatform-actions/import-solution@v0
         with:
           environment-url: https://org1c501192.crm.dynamics.com/
-          user-name: techiesurabhi@5lz7w2.onmicrosoft.com
-          password-secret: njjj
+          user-name: ${{ secrets.USERNAME }}
+          password-secret: ${{ secrets.PASSWORD }}
           solution-file: TestProject_managed.zip
