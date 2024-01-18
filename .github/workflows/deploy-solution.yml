@@ -20,6 +20,6 @@ jobs:
       - uses: microsoft/powerplatform-actions/import-solution@v0
         with:
           environment-url: https://org1c501192.crm.dynamics.com/
-          user-name: ${{ secrets.USERNAME }}
-          password-secret: ${{ secrets.PASSWORD }}
+          CLIENT_ID: 3934bbc6-bd16-437b-8887-cb01b17e57ab
+          TENANT_ID: 9208bb01-aeee-404b-bb62-ba73230069fe
           solution-file: TestProject_managed.zip
