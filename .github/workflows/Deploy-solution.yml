@@ -1,0 +1,25 @@
+name: Deploy TestProject
+
+on:
+  workflow_run:
+    workflows: ["Pack TestProject"]
+    branches: [main]
+    types:
+      - completed
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: windows-latest
+    environment: production
+    steps:
+      - uses: dawidd6/action-download-artifact@v2
+        with:
+          workflow: pack-solution.yml
+          name: packed-solution
+      - uses: microsoft/powerplatform-actions/import-solution@v0
+        with:
+          environment-url: https://orge2fc8e29.crm.dynamics.com
+          user-name: techiesurabhi@5lz7w2.onmicrosoft.com
+          password-secret: Passcode@jan2024
+          solution-file: TestProject_managed.zip
